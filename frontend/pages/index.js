@@ -7,7 +7,8 @@ import PageWrapper from '../components/PageWrapper';
 import Menu from '../components/Menu';
 import Config from '../config';
 import Logo from '../static/images/starter-kit-logo.svg';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'shards-ui/dist/css/shards.min.css';
 const wp = new WPAPI({ endpoint: Config.apiUrl });
 
 const headerImageStyle = {
@@ -119,8 +120,12 @@ class Index extends Component {
             <div className="api-info b mt4">
               Starter Kit supports both REST API and GraphQL
               <div className="api-toggle">
-                <a className="rest" href="http://localhost:3000">REST API</a>
-                <a className="graphql" href="http://localhost:3001">GraphQL</a>
+                <a className="rest" href="http://localhost:3000">
+                  API
+                </a>
+                <a className="graphql" href="http://localhost:3001">
+                  GraphQL
+                </a>
               </div>
             </div>
           </div>
@@ -135,7 +140,8 @@ class Index extends Component {
             {fpages}
           </div>
         </div>
-        <div className="content mh4 mv4 w-two-thirds-l center-l home"
+        <div
+          className="content mh4 mv4 w-two-thirds-l center-l home"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: page.content.rendered,

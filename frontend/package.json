@@ -11,15 +11,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "autoprefixer": "9.6.1",
     "axios": "^0.19.0",
+    "classnames": "^2.2.6",
     "express": "^4.16.4",
     "glob": "^7.1.3",
     "isomorphic-unfetch": "^3.0.0",
     "next": "9.0.5",
     "postcss-easy-import": "^3.0.0",
     "react": "^16.7.0",
+    "scroll-to-element": "^2.0.2",
     "tachyons": "^4.11.1",
+    "tailwindcss": "1.4.6",
+    "typeface-raleway": "^0.0.54",
     "wpapi": "^1.2.1"
   },
   "devDependencies": {
